@@ -1,0 +1,85 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+*.manifest
+*.spec
+
+# Virtual Environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+infraclarity_venv/
+diffusion_venv/
+.venv/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+frontend/dist/
+dist/
+.npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.vite/
+frontend/.vite/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+*.cert
+
+# Uploaded User Inspection Images and Generated Outputs (Dynamic Runtime Data)
+backend/uploads/*
+!backend/uploads/.gitkeep
+backend/outputs/*
+!backend/outputs/.gitkeep
+backend/outputs/history_records.json
+
+# Model Weights and Large Checkpoints (>50MB / Downloadable via scripts)
+# Salesforce BLIP Base (~944 MB) and RealESRGAN_x4plus (~64 MB)
+# Run `python backend/download_models.py` and `python backend/download_realesrgan.py` to fetch.
+models/
+backend/models/
+*.pth
+*.pt
+*.bin
+*.onnx
+*.safetensors
+*.ckpt
+
+# IDE & OS Files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+logs/
