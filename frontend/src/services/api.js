@@ -2,7 +2,12 @@
  * InfraClarity AI - REST API Client
  */
 
-const API_BASE = "http://localhost:8000";
+const API_BASE = (
+  import.meta.env.VITE_API_BASE_URL ||
+  (import.meta.env.MODE === "production"
+    ? "https://infraclarity-ai.onrender.com"
+    : "http://localhost:8000")
+).replace(/\/$/, "");
 
 export async function fetchHealth() {
   try {
